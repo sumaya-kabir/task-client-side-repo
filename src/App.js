@@ -13,7 +13,7 @@ function App() {
     {
       path: '/edit/:id',
       element: <EditInfo></EditInfo>,
-      loader: ({params}) => fetch(`http://localhost:5000/users/${params.id}`)
+      loader: ({params}) => fetch(`https://task-server-beta.vercel.app/users/${params.id}`)
     },
     
   ])

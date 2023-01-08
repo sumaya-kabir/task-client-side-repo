@@ -1,13 +1,12 @@
 import React from 'react';
 import { useQuery } from '@tanstack/react-query';
-import EditInfo from './EditInfo';
 import { Link } from 'react-router-dom';
 
 const UserData = () => {
     const { data: users = [] } = useQuery({
         queryKey: ['users'],
         queryFn: async () => {
-            const res = await fetch('http://localhost:5000/data');
+            const res = await fetch('https://task-server-beta.vercel.app/data');
             const data = await res.json();
             return data;
         }

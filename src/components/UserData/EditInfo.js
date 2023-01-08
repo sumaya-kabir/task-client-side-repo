@@ -9,7 +9,7 @@ const EditInfo = () => {
     const handleEdit = (event) => {
         event.preventDefault();
         
-        fetch(`http://localhost:5000/users/${user._id}`, {
+        fetch(`https://task-server-beta.vercel.app/users/${user._id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

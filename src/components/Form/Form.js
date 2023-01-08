@@ -17,7 +17,7 @@ const Form = () => {
             sector,
             agreedTerms: terms
         }
-        fetch('http://localhost:5000/data', {
+        fetch('https://task-server-beta.vercel.app/data', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
